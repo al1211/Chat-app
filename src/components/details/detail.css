@@ -1,0 +1,99 @@
+.details {
+  flex: 1;
+  .user {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #dddddd35;
+
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+ 
+ .info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .option {
+      .titel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          width: 30px;
+          height: 30px;
+          background-color: rgba(17, 25, 40, 0.3);
+          padding: 10px;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+      }
+    }
+    .photos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .photoItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .photoDetails {
+          display: flex;
+          align-items: center;
+
+          gap: 20px;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 5%;
+            object-fit: cover;
+          }
+          span {
+            font-size: 14px;
+            color: lightgray;
+            font-weight: 300;
+          }
+        }
+        .icon {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background-color: rgba(17, 25, 40, 0.3);
+          padding: 10px;
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+
+    button{
+        padding: 10px 20px;
+        background-color: rgba(230,74,105,0.533);
+        color: white;
+        border: none;
+        border-radius: 5px ;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            background-color: rgba(219, 22, 61, 0.818);
+        }
+
+        &.logout{
+          padding: 10px;
+          background-color: #1a73e8;
+        }
+    }
+  }
+}
