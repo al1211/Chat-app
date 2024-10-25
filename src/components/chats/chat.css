@@ -89,6 +89,7 @@
             padding: 20px;
             background-color: rgba(17,25,40,0.3);
             border-radius: 10px;
+            color: white;
         }
         span{
             font-size: 12px;
@@ -125,6 +126,11 @@ img{
     padding: 10px;
     border-radius: 10px;
     font-size: 16px ;
+    
+    &:disabled{
+        background-color: #5182feab;
+        cursor: not-allowed; 
+     }
   }
 
   .emoji{
@@ -144,6 +150,11 @@ img{
      border:none;
      border-radius: 5px;
      cursor: pointer;
+
+     &:disabled{
+        background-color: #5182feab;
+        cursor: not-allowed; 
+     }
     }
   }
     }
